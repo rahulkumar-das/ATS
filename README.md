@@ -1,4 +1,4 @@
-# Resume Expert: Gemini LLM 
+# ATS Expert Resume Review: Google Gemini
 
 ## Project Overview
 
