@@ -28,7 +28,7 @@
 
 ## Conclusion
 
-The **Resume Expert** Streamlit application stands as a significant tool in bridging the gap between job seekers and their ideal job roles. By harnessing the power of AI, it provides valuable insights and recommendations, making it a pivotal step in enhancing the job application process.
+The **ATS Resume Reviewer** Streamlit application stands as a significant tool in bridging the gap between job seekers and their ideal job roles. By harnessing the power of AI, it provides valuable insights and recommendations, making it a pivotal step in enhancing the job application process.
 
 ## Steps
 
