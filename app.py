@@ -79,36 +79,39 @@ and deep ATS functionality, your task is to evaluate the resume against the prov
 the job description. First the output should come as percentage and then keywords missing and last final thoughts.
 """
 
-if submit1:
-    if uploaded_file is not None:
-        pdf_content=input_pdf_setup(uploaded_file)
-        response=get_gemini_response(input_prompt1, pdf_content, input_text)
-        st.subheader("The response is ")
-        st.write(response)
-    else:
-        st.write("Please upload a PDF")
-elif submit2:
-    if uploaded_file is not None:
-        pdf_content=input_pdf_setup(uploaded_file)
-        response=get_gemini_response(input_prompt2, pdf_content, input_text)
-        st.subheader("The response is ")
-        st.write(response)
-    else:
-        st.write("Please upload a PDF")
-elif submit3:
-    if uploaded_file is not None:
-        pdf_content=input_pdf_setup(uploaded_file)
-        response=get_gemini_response(input_prompt3, pdf_content, input_text)
-        st.subheader("The response is ")
-        st.write(response)
-    else:
-        st.write("Please upload a PDF")
-elif submit4:
-    if uploaded_file is not None:
-        pdf_content=input_pdf_setup(uploaded_file)
-        response=get_gemini_response(input_prompt4, pdf_content, input_text)
-        st.subheader("The response is ")
-        st.write(response)
-    else:
-        st.write("Please upload a PDF")
+if input_text!="":
+    if submit1:
+        if uploaded_file is not None:
+            pdf_content=input_pdf_setup(uploaded_file)
+            response=get_gemini_response(input_prompt1, pdf_content, input_text)
+            st.subheader("The response is ")
+            st.write(response)
+        else:
+            st.write("Please upload a PDF")
+    elif submit2:
+        if uploaded_file is not None:
+            pdf_content=input_pdf_setup(uploaded_file)
+            response=get_gemini_response(input_prompt2, pdf_content, input_text)
+            st.subheader("The response is ")
+            st.write(response)
+        else:
+            st.write("Please upload a PDF")
+    elif submit3:
+        if uploaded_file is not None:
+            pdf_content=input_pdf_setup(uploaded_file)
+            response=get_gemini_response(input_prompt3, pdf_content, input_text)
+            st.subheader("The response is ")
+            st.write(response)
+        else:
+            st.write("Please upload a PDF")
+    elif submit4:
+        if uploaded_file is not None:
+            pdf_content=input_pdf_setup(uploaded_file)
+            response=get_gemini_response(input_prompt4, pdf_content, input_text)
+            st.subheader("The response is ")
+            st.write(response)
+        else:
+            st.write("Please upload a PDF")
+else:
+    st.write("Please enter Job Description")
 
